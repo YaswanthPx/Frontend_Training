@@ -1,0 +1,16 @@
+title{
+    color:bisque;/
+}
+nav{
+    background-color: bisque;
+    background: flex;
+}
+body{
+background-color:aliceblue;
+}
+nav img{
+    border-image: 10px;
+}
+section img{
+    border-image: 10px black solid;
+}    

@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(8, 12, 13);
+    color:aliceblue;
+}
+body h6{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:30px;
+    color:rgb(120, 131, 67);
+    text-align:center;
+}
+.text-shadow{
+   
+    text-shadow: 0 0 42px rgb(172, 241, 251),
+     0 0 80px  rgb(136, 229, 246),
+     0 0 30px  rgb(94, 207, 235),
+     0 0 100px  rgb(11, 203, 236),
+     0 0 200px  rgb(21, 200, 200);
+}
+nav{
+background-color:antiquewhite ;
+}
+nav h1{
+    color:black;
+}
