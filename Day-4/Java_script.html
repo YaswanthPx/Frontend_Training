@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javaScript </title>
+    <script> 
+        function add() {
+                var num1, num2,sum;
+                num1=parseInt(document.getElementById("txtFirstNumber").value);
+                num2=parseInt(document.getElementById("txtSecondNumber").value);
+                sum=num1+num2;
+                document.getElementById("txtAnswer").value=sum;
+               
+        }
+        function sub() {
+                var num1, num2,sub;
+                num1=parseInt(document.getElementById("txtFirstNumber").value);
+                num2=parseInt(document.getElementById("txtSecondNumber").value);
+                sub=num1-num2;
+                document.getElementById("txtAnswer").value=sub;
+                
+        }
+         function mul() {
+                var num1, num2,mul;
+                num1=parseInt(document.getElementById("txtFirstNumber").value);
+                num2=parseInt(document.getElementById("txtSecondNumber").value);
+                mul=num1*num2;
+                document.getElementById("txtAnswer").value=mul;
+               
+        }
+        function clean() {
+                var num1, num2,clear;
+                num1=parseInt(document.getElementById("txtFirstNumber").value="");
+                num2=parseInt(document.getElementById("txtSecondNumber").value="");
+                sub=num1*num2;
+                document.getElementById("txtAnswer").value="";
+               
+        }
+        
+    </script>
+    <style>
+        div{
+            display:absolute;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .input{
+            display: flex;
+
+        }
+        .card{
+            position: relative;
+            border:1px  solid black;
+            background-color: antiquewhite;
+            height:300px;
+            width:500px;
+           
+            padding:10px;
+            box-shadow: -3px -5px 20px rgba(114,113,113,0.404);
+    background-size: 200%;
+    border-radius: 20px;
+}
+        body{
+margin:0%;
+display:flex;
+align-items: center;
+
+justify-content: center;
+min-height: 100vh;
+background: #e3e7ee;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+       <h1>Simple Calculator </h1>
+        <div class="inputs">
+            <p>First_Number:<input id="txtFirstNumber"></p>
+            <p>Second_Number:<input id="txtSecondNumber"></p>
+        </div>
+<button onclick="add()">Add </button>
+<button onclick="sub()">Sub </button>
+<button onclick="mul()">Mul</button>
+<button onclick="clean()">Clear</button>
+<p>Ans:<input id="txtAnswer"></p>
+</div>
+
+    
+</body>
+</html>

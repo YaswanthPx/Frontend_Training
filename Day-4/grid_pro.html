@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.item1 {
+  grid-area: header;
+  background-color: purple;
+  text-align: center;
+  color: #ffffff;
+}
+
+.item1 > h1 {
+  font-size: 40px;
+}
+
+.item2 {
+  grid-area: menu;
+  }
+  
+.item2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item2 li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.item2 li:hover {
+  background-color: #0099cc;
+}
+  
+.item3 {
+  grid-area: main;
+}
+
+.item3 > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item3 > p {
+  margin-bottom: 7px;
+}
+
+.item4 {
+  grid-area: right;
+  border: 2px solid #0099cc;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+.item4 > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.item4 li {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+  <div class="item1"><h1>Tirupati</h1></div>
+
+  <div class="item2">
+    <ul>
+      <li>The Flight</li>
+      <li>The City</li>
+      <li>The Devsthanam</li>
+      <li>The Food</li>
+    </ul>
+</div>
+
+  <div class="item3">
+    <h1>The City</h1>
+    <p>Tirupati is the capital of the  regligion on the land of Andhra Pradesh.</p>
+    <p>The city can be divided in two parts, the old town and the modern city. </p>
+    <p>Tirupati is the centre point of pilgrimage.</p>
+  </div>  
+
+  <div class="item4">
+    <h2>Facts:</h2>
+    <ul>
+      <li>Tirupati is a city of Lord Venkatesh.</li>
+      <li>Metro adds ease of transport here.</li>
+    </ul>
+  </div>
+
+  <div class="item5"><p>Resize the browser window to see how the content respond to the resizing.</p></div>
+  
+</div>
+
+</body>
+</html>
+
+
