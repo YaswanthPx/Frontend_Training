@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbackForm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+        <div class="form">
+             <h1>Feedback Form </h1>
+            <form class="">
+                <div > 
+                    <label class="insLab">Name of the candidate:</label>
+                    <input class="inps" type="text" placeholder="Candidate name"><br>
+                    <label class="insLab">Contact number:</label>
+                    <input class="inps" type="number" placeholder="Contact number"><br>
+                    <label class="insLab" >Working-mail:</label><br>
+                    <input  class="another-input" type="mail" placeholder="E-mail"><br>
+                    <label class="insLab"> Candidate Age:</label><br>
+                    <input  class="another-input"type="number" placeholder="Age">
+                </div>
+                <label class="insLab">Training Attended:</label><br>
+                 
+    <select id="training" name="training">
+      <option value="">-- Select Training --</option>
+      >
+      <option value="Data Science">Python</option>
+      <option value="Data Science">c</option>
+      <option value="Data Science">c++</option>
+      <option value="Data Science">java</option>
+      <option value="Data Science">Bootstrap</option>
+      <option value="Data Science">CSS</option>
+    </select>
+            <div class="rad-btn">
+                <label class="insLab">Would you recommend trainer(Yaswanth)to a friend?</label><br><br>
+                <div class="radio" ><input type ="radio"name="Training"  value="Training">
+                <label>Yes</label>
+                <input type ="radio" name="Training" value="Training">
+                <label>No</label>
+                <input type ="radio" name="Training" value="Training">
+                <label>Maybe</label></div>
+                
+            </div>
+                    <label  class="insLab">Skills learned:</label><br><br>
+            <div class="skills">
+                
+                <label>Python</label>
+                <input type="checkbox" name="skills" value="#">
+                <label>Html</label>
+                <input type="checkbox" name="skills" value="#">
+                <label>Css</label>
+                <input type="checkbox" name="skills" value="#">
+                <label>DJango</label>
+                <input type="checkbox" name="skills" value="#">
+                <label>java</label>
+                <input type="checkbox" name="skills" value="#">
+                <label>spring</label>
+                <input type="checkbox" name="skills" value="#">
+                <label>React</label>
+                <input type="checkbox" name="skills" value="#">
+                <label>Angular  </label>
+                <input type="checkbox" name="skills" value="#">
+                <label>Bootstrap </label>
+                <input type="checkbox" name="skills" value="#">
+                <label>JavaScript</label>
+                <input type="checkbox" name="skills" value="#">
+            </div>
+            <div >
+                 <label  class="insLab">Any suggestions...?</label><br>
+                <textarea  class="textarea" rows="5" columns="10" name="Suggestions">Enter any suggestions here.....!
+                </textarea>
+            </div><br>
+            <button type="submit" onclick="done()" value="submit">Submit</button>
+    </form>
+        </div>
+</body>
+<script> function done(){
+
+alert("Submitted successfully")}</script>
+</html>
+
+
+
+
+

@@ -1,0 +1,89 @@
+ body {
+            background-color: #a4c6c8;
+            font-family: Verdana;
+            text-align: center;
+        }
+h1{
+    font-size: 30px;
+    color:rgba(215, 16, 16, 0.5);
+}
+ .form{
+            background-color: #ffffff;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(168, 81, 81, 0.5);
+            border-radius: 15px;
+            height: 110vh;
+        }
+.inps{
+            width: 600px;
+            height: 20px;
+            margin: 3px;
+            padding-bottom:5px;
+            box-shadow:     0px 10px 30px 0px rgba(105, 70, 70, 0.5);
+            border:1px solid rgb(249, 215, 220);
+            border-radius: 5px;
+}
+.another-input{
+        width: 600px;
+            height: 20px;
+            margin:3px;
+            padding-bottom:5px;
+            box-shadow:0px 10px 30px 0px rgba(105, 70, 70, 0.5);
+            border:1px solid rgb(249, 215, 220);
+            border-radius: 5px;
+}
+.textarea{
+        border-radius: 5px;
+        width: 600px;
+}
+select{
+            width: 400px;
+            height: 25px;
+            margin-right: 22px;
+            padding-bottom:5px;
+            box-shadow:0px 10px 30px 0px rgba(105, 70, 70, 0.5);
+            border:1px solid #ccc;
+            border-radius: 5px;
+}
+.radio{
+    float: left;
+    color:rgb(90, 69, 37);
+}
+.skills{
+     float:inherit;
+    color:rgb(90, 69, 37);
+}
+
+
+
+.insLab{
+    float:left;
+    padding: 10px 5px;
+    color:rgb(90, 69, 37);
+
+}
+
+button{
+    width: 70%;
+    height:40px;
+    background: linear-gradient(to right, rgba(215, 16, 16, 0.5));
+    color:white;
+    font-size: 20px;
+    border:20px;
+    border-radius: 5px;
+
+}
+  button:hover{
+    cursor:pointer;
+    background-color: rgba(154, 62, 62, 0.5) ;
+}
+.textarea{
+    padding-bottom: 40px;
+    border:1px solid rgb(249, 215, 220);
+    box-shadow:0px 10px 30px 0px rgba(105, 70, 70, 0.5);
+    font-size: 16px;
+    border-radius: 8px;
+}
+  

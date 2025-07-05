@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Info Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Information Form</h2>
+  <form id="userForm" onsubmit="showData(event)">
+    <label>
+      Name:
+      <input type="text" id="name" required>
+    </label>
+
+    <label>
+      Gender:
+      <input type="radio" name="gender" value="Male" required> Male
+      <input type="radio" name="gender" value="Female"> Female
+       <input type="radio" name="gender" value="Others"> Others 
+    </label>
+
+    <label>
+      Country:
+      <select id="country" required>
+        <option value="">--Select--</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+      </select>
+    </label>
+
+    <label>
+      Hobbies:
+      <input type="checkbox" name="hobby" value="Reading"> Reading
+      <input type="checkbox" name="hobby" value="Sports"> Sports
+      <input type="checkbox" name="hobby" value="Music"> Music
+    </label>
+
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function showData(event) {
+      event.preventDefault(); // prevent actual form submission
+
+      let name = document.getElementById("name").value;
+      let gender = document.querySelector('input[name="gender"]:checked')?.value;
+      let country = document.getElementById("country").value;
+
+      let hobbies = [];
+      document.querySelectorAll('input[name="hobby"]:checked').forEach(cb => {
+        hobbies.push(cb.value);
+      });
+
+      let message = `Name: ${name}\nGender: ${gender}\nCountry: ${country}\nHobbies: ${hobbies.join(",")}`;
+      alert(message);
+    }
+  </script>
+
+</body>
+</html>

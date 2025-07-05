@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Feedback Form</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #d0e0ee;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+  
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 600px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ca835a;
+      box-shadow:-px 9px 15px 0px#56b1ee;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    textarea {
+      height: 80px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #56b1ee;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Faculty Feedback Form</h2>
+
+    <label for="facultyName">Faculty Name:</label>
+    <input type="text" id="facultyName" name="facultyName">
+
+    <label for="training">Training Attended:</label>
+    <select id="training" name="training">
+      <option value="">-- Select Training --</option>
+      >
+      <option value="Data Science">Python</option>
+      <option value="Data Science">c</option>
+      <option value="Data Science">c++</option>
+      <option value="Data Science">java</option>
+      <option value="Data Science">Bootstrap</option>
+      <option value="Data Science">CSS</option>
+    </select>
+
+    <label>Overall Rating:</label>
+    <input type="radio" id="excellent" name="rating" value="Excellent">
+    <label for="excellent">Excellent</label>
+    <input type="radio" id="good" name="rating" value="Good">
+    <label for="good">Good</label>
+    <input type="radio" id="poor" name="rating" value="Poor">
+    <label for="poor">Poor</label>
+
+    <label>Topics Covered:</label>
+    <input type="checkbox" id="quality" name="topics" value="Content Quality">
+    <label for="quality">Content Quality</label><br>
+    <input type="checkbox" id="delivery" name="topics" value="Delivery">
+    <label for="delivery">Delivery</label><br>
+    <input type="checkbox" id="interaction" name="topics" value="Interaction">
+    <label for="interaction">Interaction</label><br>
+    <input type="checkbox" id="relevance" name="topics" value="Relevance">
+    <label for="relevance">Relevance</label>
+
+    <label for="comments">Suggestions/Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Write your feedback here..."></textarea>
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>
