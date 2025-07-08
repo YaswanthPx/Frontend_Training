@@ -1,0 +1,30 @@
+nav{
+    postion :fixed;
+    
+    background-color: rgb(211, 240, 84);
+    padding:30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font:bold;
+    justify-content: center;
+}
+.card{
+    
+    background-color: rgb(243, 245, 236);
+    height:200px;
+    width: 800px;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+        box-shadow: -3px -5px 20px rgba(114,113,113,0.404);
+    background-size: 200%;
+    border-radius: 20px;
+}
+body{
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+ 
+
+}

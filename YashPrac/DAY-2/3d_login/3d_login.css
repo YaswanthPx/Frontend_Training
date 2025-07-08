@@ -1,0 +1,57 @@
+body{
+margin:0%;
+display:flex;
+align-items: center;
+
+justify-content: center;
+min-height: 100vh;
+background: #e3e7ee;
+
+}
+
+
+.card{
+    position:relative;
+    height:300px;
+    width:400px;
+    box-shadow: -3px -5px 20px rgba(114,113,113,0.404);
+    background-size: 200%;
+    border-radius: 20px;
+}
+ input{
+
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    height :35px;
+    width:70%;
+    box-sizing: border-box;
+    transform:translateX(20%)translateY(100px);
+    margin: 10px ;
+    border:none ;
+    border-radius: 8px; 
+    box-shadow: -3px -5px 10px rgba(114,113,113,0.404);
+    outline:none;
+}
+h1{
+
+    position:absolute;
+    font-size: 2.5em;
+    text-transform: capitalize;
+    transform:translateX(30px)translateY(-5px);
+    color:rgba(24,37,22,0.6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    position:relative;
+    height :30px;
+    width:110px;
+    background: none;
+    transform:translateX(120px)translateY(110px);
+    margin: 10px ;
+    border:none;
+    border-radius: 10px;
+    box-shadow: -3px -5px 10px rgba(114,113,113,0.404);
+    outline:none;
+}

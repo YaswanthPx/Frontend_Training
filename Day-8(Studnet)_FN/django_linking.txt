@@ -1,0 +1,87 @@
+Create a simple Django project with:
+
+A homepage
+An about page
+Links to switch between them
+
+Step 1: Create Django Project and App
+
+django-admin startproject myproject
+cd myproject
+python manage.py startapp main
+
+Step 2: Register App in settings.py
+Open myproject/settings.py and add 'main' to INSTALLED_APPS:
+
+INSTALLED_APPS = [
+    ...
+    'main',
+]
+Step 3: Create Templates Folder in App
+Inside the main app folder:
+main/
+├── templates/
+│   └   ── home.html
+│       └── about.html
+📄 home.html:
+<!DOCTYPE html>
+<html>
+<head><title>Home</title></head>
+<body>
+  <h1>This is Home Page</h1>
+  <a href="{% url 'about' %}">Go to About Page</a>
+</body></html>
+
+about.html:
+
+<!DOCTYPE html>
+<html>
+<head><title>About</title></head>
+<body>
+  <h1>This is About Page</h1>
+  <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>
+
+Step 4: Create Views in main/views.py
+
+from django.shortcuts import render
+def home(request):
+    return render(request, 'home.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+Step 5: Create URLs in App (main/urls.py)
+Create urls.py in the main folder:
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('home/', views.home, name='home'),
+    path('about/', views.about, name='about'),
+]
+
+Step 6: Link App URLs to Project URLs
+In myproject/urls.py, include the app’s URLs:
+
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('main/', include('main.urls')),
+]
+Step 7: Run the Server
+
+python manage.py runserver
+Go to:
+
+http://127.0.0.1:8000/main/home/ → Home page
+http://127.0.0.1:8000/main/about/
+Click the link → Goes to About page
+
+Click the link → Goes back to Home
+

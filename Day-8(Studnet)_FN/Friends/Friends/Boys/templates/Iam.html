@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>This is Yaswanth</title>
+<link rel="stylesheet" href="Iam.css"/>
+</head>
+<body>
+<nav>
+     <img src="{% static 'image/collgeLogo.png' %}" width="100" height="100" >
+    <h1>Mother Theressa  </h1></nav>
+<section>
+    <marquee scrolldelay="60" direction="right"><h2><u>About Me </u></h2></marquee>
+    <h2><font size="5" face="cooper" color="skyblue">
+        Iam Yaswanth </font></h2><br>
+    <img src="Yaswanth.png" align=right width=300px height=300px><font size="3" face="courier new" color="darkblack">
+    <p>Iam aspiring to become <b> FullStack Web Developer.</b></p>
+    <p>And my personal details are, iam from baireddipalli.<br> 
+        and iam persuing my masters in mother theressa institute of technology.<br>
+        my hobbies are playing cricket and playing mobile games.<br>
+        and iam interested to spend my time with my family and friends.
+
+    </p>
+</section>
+<section>
+<h3>My closest friends are :</h3>
+
+<a href="{% url'sam' %}"> <Button>sam</Button></a><br>
+<a href="{% url'madhu' %}"> <Button>Madhu</Button></a><br>
+<a href="{% url'srikar' %}"> <Button>Srikar </Button></a><br>
+<a href="{% url'yuva'%}"> <Button>Yuva</Button></a><br>
+<a href="{% url'loki' %}"> <Button>Loki</Button></a>
+</section>
+<section>
+<table  border="5">
+    <tr>
+        <td>Sno</td>
+        <td>Name of the Person</td>
+        <td>Dcscription</td>
+    </tr>
+     <tr bg-color="green">
+        <td>1</td>
+        <td>Madhu</td>
+        <td>Inter</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Sam</td>
+        <td>Btech</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td> Srikar</td>
+        <td>MCA</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td> Yuva</td>
+        <td>Btech</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Loki</td>
+        <td>Btech</td>
+    </tr>
+    
+</section>
+</table>
+</body>
+</html>
